@@ -1,0 +1,11 @@
+Hyak Commands: 
+>>qsub -I -l walltime=3:00:00 (start interactive session on hyak, length 3 hours)
+>>module avail (software avail on hyak)
+>>module (un)load <module_name> (to choose/unchoose version of python, for example)
+>>module list (list all software you've loaded, i.e. added to bashrc)
+
+OOP:
+>>@staticmethod is not tied to any particular reference object, i.e. doesn't reference self 
+
+Linked Lists: 
+>>each node in linked list has place for storing data and pointer to next node 
