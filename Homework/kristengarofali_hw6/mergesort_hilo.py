@@ -1,7 +1,7 @@
 def merge_sort_hilo(a):
 
     global aux
-    aux = [0] * len(a)
+    aux = a[:]
     sort(a,0,len(a)-1)
 
 def sort(a, lo, hi):
@@ -18,11 +18,10 @@ def merge(a, lo, mid, hi):
 
     i = lo
     j = mid + 1
-    aux = a[:]
 
     k = lo
     while k <= hi:
-        while ((i<=mid) & (j<=hi)):
+        while i<=mid and j<=hi:
             if aux[j] < aux[i]:
                 a[k] = aux[j]
                 j += 1
